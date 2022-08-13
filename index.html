@@ -1,15 +1,78 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="images/logo.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Tindog</title>
     </head>
     <body>
         <header class="container">
-            
+            <img
+                src="images/icon-profile.png"
+                alt="profile icon"
+                class="header-icon"
+            />
+            <img src="images/logo.png" alt="Tindog logo" class="header-icon" />
+            <img
+                src="images/icon-chat.png"
+                alt="chat icon"
+                class="header-icon"
+            />
         </header>
-        <main></main>
+        <main>
+            <section class="container">
+                <div class="profile">
+                    <img
+                        src="images/dog-rex.jpg"
+                        alt="Profile Picture"
+                        class="avatar"
+                    />
+
+                    <div class="badge">
+                        <img
+                            src="images/badge-like.png"
+                            alt="like badge"
+                            class=""
+                        />
+                        <img
+                            src="images/badge-nope.png"
+                            alt="nope badge"
+                            class=""
+                        />
+                    </div>
+
+                    <div class="profile-info">
+                        <h1>Teddy, 30</h1>
+                        <p>How you doin?</p>
+                    </div>
+                </div>
+
+                <form class="profile-actions">
+                    <input type="radio" name="action" id="nope" />
+                    <label for="nope" class="nope-btn">
+                        <img src="images/icon-cross.png" alt="cross icon" />
+                    </label>
+
+                    <input type="radio" name="action" id="like" />
+                    <label for="like" class="like-btn">
+                        <img src="images/icon-heart.png" alt="heart icon" />
+                    </label>
+                </form>
+            </section>
+        </main>
         <script src="/index.js" type="module"></script>
     </body>
 </html>
