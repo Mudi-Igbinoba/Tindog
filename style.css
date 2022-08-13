@@ -1,0 +1,146 @@
+/* General */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Typography */
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.25em;
+    color: #f8f8f8;
+}
+
+p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #b7b7b7;
+}
+
+/* Layout */
+.container {
+    position: relative;
+    max-width: 800px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: relative;
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icon {
+    cursor: pointer;
+}
+.logo {
+    width: 85px;
+}
+
+.proficon,
+.chat {
+    width: 32px;
+}
+
+/* Main */
+/* Profile */
+main {
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+.profile {
+    position: relative;
+}
+
+.profile-info {
+    position: absolute;
+    top: 90%;
+    margin-left: 0.8em;
+}
+
+.badge {
+    width: 300px;
+    position: absolute;
+    margin-left: 12.5px;
+    top: 6%;
+    transform: rotateZ(-30deg);
+}
+
+@media (max-width: 800px) {
+    .profile-info {
+        top: 89%;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-info {
+        top: 80%;
+    }
+
+    .badge {
+        width: 200px;
+        margin-left: 12px;
+        top: 8%;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-info {
+        top: 78%;
+    }
+}
+
+/* Profile Actions */
+.profile-actions {
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+input[type='radio'] {
+    appearance: none;
+}
+
+label {
+    padding: 1.5em;
+    box-shadow: 0px 10px 20px #e9e9ea;
+    border-radius: 50%;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#nope + label:hover,
+#nope:checked + label {
+    background: #ffe7ef;
+    box-shadow: 0px 10px 20px #edd9df;
+}
+
+#like + label:hover,
+#like:checked + label {
+    background: #dbfff4;
+    box-shadow: 0px 10px 20px #ccf1e6;
+}
