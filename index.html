@@ -39,45 +39,21 @@
         </header>
         <main>
             <section class="container">
-                <div class="profile">
-                    <img
-                        src="images/dog-teddy.jpg"
-                        alt="Profile Picture"
-                        class="avatar"
-                    />
-
-                    <div class="badge">
-                        <!-- <img
-                            src="images/badge-like.png"
-                            alt="like badge"
-                            class=""
-                        /> -->
-                        <img
-                            src="images/badge-nope.png"
-                            alt="nope badge"
-                            class=""
-                        />
-                    </div>
-
-                    <div class="profile-info">
-                        <h1>Teddy, 30</h1>
-                        <p>How you doin?</p>
-                    </div>
-                </div>
+                <div id="profile"></div>
 
                 <form class="profile-actions">
                     <input type="radio" name="action" id="nope" />
-                    <label for="nope" class="nope-btn">
+                    <label for="nope" id="nope-btn">
                         <img src="images/icon-cross.png" alt="cross icon" />
                     </label>
 
                     <input type="radio" name="action" id="like" />
-                    <label for="like" class="like-btn">
+                    <label for="like" id="like-btn">
                         <img src="images/icon-heart.png" alt="heart icon" />
                     </label>
                 </form>
             </section>
         </main>
-        <script src="/index.js" type="module"></script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>

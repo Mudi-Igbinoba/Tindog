@@ -31,6 +31,29 @@ p {
     color: #b7b7b7;
 }
 
+.notify {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.notify + img {
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0qem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
 /* Layout */
 .container {
     position: relative;
@@ -62,7 +85,7 @@ header {
 
 /* Main */
 /* Profile */
-main {
+main .container {
     position: relative;
     background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
 }
@@ -72,7 +95,7 @@ main {
     border-radius: 15px;
     position: relative;
 }
-.profile {
+#profile {
     position: relative;
 }
 
@@ -82,7 +105,7 @@ main {
     margin-left: 0.8em;
 }
 
-.badge {
+#badge {
     width: 300px;
     position: absolute;
     margin-left: 12.5px;
@@ -96,12 +119,12 @@ main {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .profile-info {
         top: 80%;
     }
 
-    .badge {
+    #badge {
         width: 200px;
         margin-left: 12px;
         top: 8%;
@@ -111,6 +134,18 @@ main {
 @media (max-width: 400px) {
     .profile-info {
         top: 78%;
+    }
+}
+
+@media (max-width: 350px) {
+    .profile-info {
+        top: 75%;
+    }
+
+    #badge {
+        width: 200px;
+        margin-left: 12px;
+        top: 10%;
     }
 }
 
@@ -143,4 +178,19 @@ label {
 #like:checked + label {
     background: #dbfff4;
     box-shadow: 0px 10px 20px #ccf1e6;
+}
+
+/* Animation */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
